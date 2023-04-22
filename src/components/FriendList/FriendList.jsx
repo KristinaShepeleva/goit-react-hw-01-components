@@ -9,12 +9,12 @@ export const FriendList = ({ friends }) => {
         <ul className={css.friend__list}>
            {friends.map(({id, avatar, name, isOnline }) => {
         return (
-        <li className="item" key={id}>
+        <li className={css.item} key={id}>
                 <span className={`${css.status} ${css[isOnline]}`}>
               {isOnline}
             </span>   
-        <img className="avatar" src={avatar} alt={name} width="48"/>
-          <p className="name">{name}</p>              
+        <img className={css.avatar} src={avatar} alt={name} width="48"/>
+          <p className={css.name}>{name}</p>              
         </li>)
             })} 
 </ul>
