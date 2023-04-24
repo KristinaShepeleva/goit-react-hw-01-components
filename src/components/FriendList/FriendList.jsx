@@ -2,7 +2,6 @@ import PropTypes from 'prop-types';
 import css from './FriendList.module.css'
 
 export const FriendList = ({ friends }) => {
-   // console.log(friends);
 
     return (
       <ul className={css.friend__list}>
@@ -21,6 +20,7 @@ export const FriendList = ({ friends }) => {
 </ul>
     )
 }
+
 
 FriendList.propTypes = {
     friends: PropTypes.arrayOf(PropTypes.shape({
